@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Alumni Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 25%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .social-login {
+            margin-bottom: 20px;
+        }
+
+        .social-login a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 5px;
+            width: 50%; 
+            text-align: center;
+            color: white;
+            margin-bottom: 10px; 
+            margin-left: 20%;
+        }
+
+        .social-login .linkedin {
+            background-color: #0073b1;
+        }
+
+        .social-login .google {
+            background-color: #db4437;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .submit-btn {
+            width: 56%;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left:20%;
+        }
+
+        .submit-btn:hover {
+            background-color: darkgreen;
+        }
+
+        .links {
+            text-align: center;
+        }
+
+        .links a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+    <script>
+        function navigateToAccount(event) {
+            event.preventDefault(); // Prevent the default form submission
+            window.location.href = 'account.html'; // Redirect to account.html
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <p>Create your profile by importing any of your existing social profiles</p>
+        <div class="social-login">
+            <a href="#" class="linkedin">Signup with LinkedIn</a>
+            <a href="#" class="google">Signup with Google</a>
+        </div>
+        <form onsubmit="navigateToAccount(event);">
+            <input type="email" name="email" placeholder="Email Address" class="form-input" required>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div class="links">
+            <p>Already a member? <a href="login.html">Click here to Login</a></p>
+        </div>
+    </div>
+    <footer>
+        &copy; SVR Engineering College | <a href="#">Facebook</a> | <a href="#">Twitter</a>
+    </footer>
+</body>
+</html>

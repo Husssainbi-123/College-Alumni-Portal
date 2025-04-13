@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - SVRECAA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .videos {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .video {
+            width: 30%;
+        }
+
+        .video img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .video img:hover {
+            transform: scale(1.05);
+        }
+
+        .video-title {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Videos from SVRECAA</h1>
+        <div class="videos">
+            <div class="video">
+                <img src="video1.jpg" alt="Video 1">
+                <div class="video-title">Video 1 - Alumni Highlights</div>
+            </div>
+            <div class="video">
+                <img src="video2.jpg" alt="Video 2">
+                <div class="video-title">Video 2 - Event Recap</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

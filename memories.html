@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories - SVRECAA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .memories {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .memory {
+            width: 30%;
+        }
+
+        .memory img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .memory img:hover {
+            transform: scale(1.05);
+        }
+
+        .memory-title {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Memories from SVRECAA</h1>
+        <div class="memories">
+            <div class="memory">
+                <img src="memory1.jpg" alt="Memory 1">
+                <div class="memory-title">Memory 1 - 1990s Reunion</div>
+            </div>
+            <div class="memory">
+                <img src="memory2.jpg" alt="Memory 2">
+                <div class="memory-title">Memory 2 - Group Photo</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
